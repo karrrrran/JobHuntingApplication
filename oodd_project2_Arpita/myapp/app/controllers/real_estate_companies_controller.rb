@@ -44,7 +44,6 @@ class RealEstateCompaniesController < ApplicationController
   def show
     @company = RealEstateCompany.find(params[:id])
     puts @company.company_name
-    puts "aru"
     puts @company.website
     respond_to do |format|
       format.html # show.html.erb

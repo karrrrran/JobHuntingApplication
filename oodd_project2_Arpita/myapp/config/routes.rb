@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get '/show_houses_with_filters/' => 'houses#show_houses_with_filters'
   get '/inquiries/new/:id' => 'inquiries#new'
   post '/inquiries/create' => 'inquiries#create'
+  get '/inquiries/current_user_inquiries' => 'inquiries#current_user_inquiries'
   resources :inquiries
   resources :realtors
   resources :real_estate_companies

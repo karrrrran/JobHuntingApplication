@@ -1,0 +1,19 @@
+<h1>Showing inquiry</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject :</b>
+  <%= @inquiry.subject %>
+</p>
+
+<p>
+  <b>Message content</b>
+  <%= @inquiry.message_content %>
+</p>
+
+
+<%= link_to 'Go back ', '/inquiries/current_user_inquiries' %> |
+<br>
+
+  <%= link_to 'Edit',  edit_inquiry_path(@inquiry) %>
