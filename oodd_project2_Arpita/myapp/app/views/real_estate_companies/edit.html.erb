@@ -1,0 +1,33 @@
+<h1>Editing Real estate company</h1>
+
+<%= form_with url: "/real_estate_companies/"+(@company.id).to_s,  scope: :company , method: 'PATCH'  do |form| %>
+
+  <%= form.label :company_name %>
+  <%= form.text_field :company_name %>
+  <br>
+  <%= form.label :website %>
+  <%= form.text_field :website %>
+  <br>
+  <%= form.label :address %>
+  <%= form.text_field :address %>
+  <br>
+  <%= form.label :size_of_company %>
+  <%= form.text_field :size_of_company %>
+  <br>
+  <%= form.label :founded_year %>
+  <%= form.text_field :founded_year %>
+  <br>
+  <%= form.label :revenue %>
+  <%= form.text_field :revenue %>
+  <br>
+  <%= form.label :synopsis %>
+  <%= form.text_field :synopsis %>
+
+  <br>
+
+  <br>
+
+
+  <br>
+  <%= submit_tag("Update") %>
+<% end %>

@@ -1,0 +1,38 @@
+<%= render "header" %>
+<p id="notice"><%= notice %></p>
+
+<% if session[:user_type] =="admin"%>
+
+  <%= link_to "Create real estate company ", '/real_estate_companies/new' %>
+  <br>
+  <br>
+  <%= link_to "View all users ", '/users/show_all' %>
+  <br>
+  <%= link_to "Show realtors ", '/realtors' %>
+  <br>
+  <%= link_to "Show real estate companies ", '/real_estate_companies' %>
+  <br>
+  <%= link_to "View all houses ", houses_url %>
+<%end %>
+
+<% if session[:user_type] =="realtor"%>
+  <%= link_to "Update/Add the company information ", '/realtors/edit_company' %>
+  <br>
+  <br>
+  <%= link_to "List a house ", '/houses/new' %>
+  <br>
+  <br>
+  <%= link_to "View all houses ", '/houses/index' %>
+
+<%end %>
+
+<% if session[:user_type] =="househunter"%>
+
+  <br>
+  <%= link_to "Show real estate companies ", real_estate_companies_url%>
+  <br>
+  <br>
+  <%= link_to "Show houses ", show_houses_with_filters_url%>
+  <br>
+
+<%end %>

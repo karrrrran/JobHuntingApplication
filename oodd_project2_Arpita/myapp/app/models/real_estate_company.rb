@@ -1,0 +1,2 @@
+class RealEstateCompany < ApplicationRecord
+end
