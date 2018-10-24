@@ -1,4 +1,4 @@
-# JobHuntingApplication
+# House Hunting Application
 
 Please read the problem statement [here](https://docs.google.com/document/d/1NiLvnbmIVmiFco5iQuptvy5Om2c9DLp_ntOByDIdU6A/edit)
 
